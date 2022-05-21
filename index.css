@@ -5,14 +5,41 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
-
-
-.pswp-gallery a img{
-
-    width: 100%;
-
+html{
+    background:#fff!important;
 }
 
+.pswp__bullets-indicator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .pswp__bullet {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 5px;
+  }
+  .pswp__bullet--active { 
+    background: green;
+  }
+
+.pswp-gallery a img{
+height:100%;
+    width: 100%;
+
+
+}
+.pswp__button{
+    /* display:none; */
+    z-index: 100;
+}
 .fancyLine{
     width:100%;
     display:flex;
