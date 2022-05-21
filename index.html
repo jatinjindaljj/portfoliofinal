@@ -6,116 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script type="module">
-      import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
-      const lightbox = new PhotoSwipeLightbox({
-        gallery: '#gallery--getting-started',
-        children: 'a',
-        pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
-      });
-      lightbox.init();
-    </script>
+    
 
-    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="./photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="./index.css">
  
 </head>
 <body>
     
+  <header >
+    <div id="header">
+     <h1 >
+      Jatin Jindal
+     </h1>
+  </div>
+  </header>
+  <div class="fancyLine">
+
+    <img src="/portfoliofinal/img/line/line.svg" alt="">
+  </div>
+
 
     <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
-
-      <a href="/img/dribble_6_final.svg" 
-          data-pswp-width="1220" 
-          data-pswp-height="864" 
-          target="_blank">
-          <img src="/img/Small (2).png" alt="" />
-        </a>
-
-        <a href="/img/dribble_2_final.svg" 
-          data-pswp-width="1220" 
-          data-pswp-height="864" 
-          target="_blank">
-          <img src="/img/dribble_2_final_small.png" alt="" />
-        </a>
-        
-        <a href="/img/Language_big (1).svg" 
-          data-pswp-width="1220" 
-          data-pswp-height="864" 
-          target="_blank">
-          <img src="/img/Laguage_small.png" alt="" />
-        </a>
-        
-      
-
-        <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
-          data-pswp-width="1669" 
-          data-pswp-height="2500" 
-          target="_blank">
-          <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
-        </a>
-        
-        <a href="/img/Android Small - 244.png" 
-        data-pswp-width="450" 
-        data-pswp-height="850" 
-        target="_blank">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
-      </a>
-      <a href="/img/Iterations.svg" 
-        data-pswp-width="1550" 
-        data-pswp-height="1847" 
-        target="_blank">
-        <img src="/img/iteration small.jpg" alt="" />
-      </a>
-
-      <a data-pswp-type="video" href="/img/FleetRFdEMO.mp4"
-      data-pswp-width="1550" 
-      data-pswp-height="1847" 
-      target="_blank">
-      <img src="/img/iteration small.jpg" alt="" />
-    </a>
-
-
-
-        <!-- cropped thumbnail: -->
-        <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" 
-          data-pswp-width="1875" 
-          data-pswp-height="2500" 
-          data-cropped="true" 
-          target="_blank">
-          <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
-          Cropped
-        </a>
-        <!-- data-pswp-src with custom URL in href -->
-        <a href="https://unsplash.com" 
-          data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
-          data-pswp-width="2500" 
-          data-pswp-height="1666" 
-          target="_blank">
-          <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
-        </a>
-        <!-- Without thumbnail: -->
-        <a href="http://example.com" 
-          data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
-          data-pswp-width="2500" 
-          data-pswp-height="1668" 
-          target="_blank">
-          No thumbnail
-        </a>
-        <!-- wrapped with any element: -->
-        <div>
-          <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
-            data-pswp-width="2500" 
-            data-pswp-height="1667" 
-            target="_blank">
-            <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
-          </a>
-        </div>
-    </div>
     
+      <a href="./img/fleetrf.svg" 
+          data-pswp-width="1220" 
+          data-pswp-height="864" 
+          target="_blank">
+          <img src="./img/fleetrf.svg" alt="" />
+        </a>
+
+      <a href="./img/fastinvoice.svg" 
+          data-pswp-width="1220" 
+          data-pswp-height="864" 
+          target="_blank">
+          <img src="./img/fastinvoice.svg" alt="" />
+        </a>
+
+       
+      <a href="./img/oik.svg" 
+          data-pswp-width="1220" 
+          data-pswp-height="864" 
+          target="_blank">
+          <img src="./img/oik.svg" alt="" />
+      </a>
+        <a href="./img/language.png" 
+          data-pswp-width="1220" 
+          data-pswp-height="864" 
+          target="_blank">
+          <img src="./img/language.png" alt="" />
+        </a>
+        
+       
+        
+       
+        
+      </div>
+     
       
 
-
-   
-</body>
+    <script type="module">
+      import PhotoSwipeLightbox from './photoswipe/dist/photoswipe-lightbox.esm.js';
+      const lightbox = new PhotoSwipeLightbox({
+        bgOpacity: 1,
+        gallery: '#gallery--getting-started',
+        children: 'a',
+        pswpModule: () => import('./photoswipe/dist/photoswipe.esm.js')
+      });
+      lightbox.init();
+    </script>
+    <script src="./index.js"></script>
+  </body>
 </html>
