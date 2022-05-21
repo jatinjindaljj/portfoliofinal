@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     
 
-    <link rel="stylesheet" href="./photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="./photoswipe/photoswipe.css">
     <link rel="stylesheet" href="./index.css">
  
 </head>
@@ -65,13 +65,14 @@
       
 
     <script type="module">
-      import PhotoSwipeLightbox from './photoswipe/dist/photoswipe-lightbox.esm.js';
-      const lightbox = new PhotoSwipeLightbox({
-        bgOpacity: 1,
-        gallery: '#gallery--getting-started',
-        children: 'a',
-        pswpModule: () => import('./photoswipe/dist/photoswipe.esm.js')
-      });
+      import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+          bgOpacity: 1,
+          gallery: '#gallery--getting-started',
+          children: 'a',
+          pswpModule: () => import('./photoswipe/photoswipe.esm.js')
+        });
       lightbox.init();
     </script>
     <script src="./index.js"></script>
