@@ -13,10 +13,9 @@ window.addEventListener("scroll",()=>{
 })
 
 
-// git comment
-// git add.
-//git comment -m "Commit"
 
+// git add .
+//git comment -m "Commit"
 //git push
 
 // git checkout -b newBranchName
